@@ -1,3 +1,11 @@
+<% if user_signed_in? %>
+<div class ="center hero-unit">
+
+<h1><p>You're logged in. </p> <p>Begin enjoying Capshare!</p></h1>
+<h2>Feel free to start uploading some of your favorite nature images and share them with other users. </h2>
+</div>
+
+<% else %>
 <div class ="center hero-unit">
 
 <h1>Welcome to Capshare! The Nature Image Sharing Web App!</h1>
@@ -6,5 +14,6 @@
   <%= link_to "One Month Rails", "http://onemonthrails.com" %>
   initiative.
 </p>
-<p> <%= link_to 'Sign up now!',  "#" , class: "btn btn-large btn-primary" %> </p>
+<p> <%= link_to 'Sign up now!', new_user_registration_path, class: "btn btn-large btn-primary" %> </p>
 </div>
+<% end %>
