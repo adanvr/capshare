@@ -1,0 +1,1 @@
+# This is a web application built using Ruby on Rails. Capshare is a web application geared toward sharing interesting and captivating nature photography among users.
