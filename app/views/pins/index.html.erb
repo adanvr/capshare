@@ -1,0 +1,20 @@
+  <h1>Listing Capshares</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Description of Capshare</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <%= render @pins %>
+        </tbody>
+    </table>
+
+    <br />
+
+    <%= link_to 'New Capshare', new_pin_path %>
